@@ -148,10 +148,9 @@ jobs:
       run: |
         timeout 30s streamlit run app.py --server.headless true --server.port 8501 &
         sleep 10
-        curl -f http://localhost:8501 || exit 1
-
-    - name: ✅ App health check passed
+        curl -f http://localhost:8501 || exit 1    - name: ✅ App health check passed
       run: echo "Application started successfully!"
+
   deploy-staging:
     name: Deploy to Staging
     runs-on: ubuntu-latest
