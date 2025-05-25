@@ -1,0 +1,27 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+include CONTRIBUTING.md
+include SECURITY.md
+include CODE_OF_CONDUCT.md
+include requirements*.txt
+include .env.example
+include pytest.ini
+include pyproject.toml
+include *.csv
+
+recursive-include .github *.md *.yml *.yaml
+recursive-include docs *.md *.rst *.txt
+recursive-include tests *.py *.csv *.json
+
+global-exclude *.pyc
+global-exclude *.pyo
+global-exclude *~
+global-exclude *.so
+global-exclude .DS_Store
+global-exclude __pycache__
+global-exclude .pytest_cache
+global-exclude .coverage
+global-exclude htmlcov
+global-exclude .mypy_cache
+global-exclude .git*

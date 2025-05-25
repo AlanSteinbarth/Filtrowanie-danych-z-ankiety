@@ -1,0 +1,160 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "survey-data-filter"
+version = "2.0.0"
+authors = [
+    {name = "Alan Steinbarth", email = "alan.steinbarth@gmail.com"},
+]
+description = "Advanced data filtering and visualization tool for survey analysis"
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+    "Topic :: Office/Business :: Financial :: Spreadsheet",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+    "Framework :: Streamlit",
+]
+keywords = [
+    "streamlit",
+    "data-analysis",
+    "survey",
+    "filtering",
+    "visualization",
+    "dashboard",
+    "pandas",
+    "plotly",
+    "data-science",
+]
+dependencies = [
+    "streamlit>=1.28.0",
+    "pandas>=2.0.0",
+    "plotly>=5.15.0",
+    "numpy>=1.24.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black>=23.12.1",
+    "flake8>=7.0.0",
+    "isort>=5.13.2",
+    "mypy>=1.8.0",
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "bandit>=1.7.5",
+    "safety>=2.3.4",
+    "pre-commit>=3.6.0",
+    "radon>=6.0.1",
+    "semgrep>=1.45.0",
+]
+docs = [
+    "sphinx>=7.2.6",
+    "sphinx-rtd-theme>=2.0.0",
+    "myst-parser>=2.0.0",
+]
+test = [
+    "pytest>=7.4.3",
+    "pytest-cov>=4.1.0",
+    "pytest-mock>=3.12.0",
+    "pytest-xdist>=3.5.0",
+    "responses>=0.24.1",
+    "freezegun>=1.2.2",
+]
+
+[project.urls]
+Homepage = "https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety"
+Documentation = "https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety#readme"
+Repository = "https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety.git"
+"Bug Reports" = "https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety/issues"
+Changelog = "https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety/blob/main/CHANGELOG.md"
+
+[project.scripts]
+survey-filter = "app:main"
+
+[tool.setuptools]
+packages = ["survey_filter"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+"*" = ["*.csv", "*.md", "*.txt", "*.yml", "*.yaml"]
+
+[tool.black]
+line-length = 88
+target-version = ['py38', 'py39', 'py310', 'py311']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+line_length = 88
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+check_untyped_defs = true
+disallow_untyped_decorators = true
+no_implicit_optional = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+strict_equality = true
+
+[tool.coverage.run]
+source = ["app.py"]
+omit = [
+    "tests/*",
+    "venv/*",
+    ".venv/*",
+    "*/site-packages/*",
+]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+]
+
+[tool.bandit]
+exclude_dirs = ["tests"]
+skips = ["B101", "B601"]

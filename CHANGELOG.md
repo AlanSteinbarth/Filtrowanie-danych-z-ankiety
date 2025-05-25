@@ -1,9 +1,62 @@
 # Changelog
 
-Wszystkie znaczące zmiany w tym projekcie będą dokumentowane w tym pliku.
+All notable changes to this project will be documented in this file.
 
-Format oparty na [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-a projekt stosuje [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [Unreleased]
+
+### Planned for v2.1.0
+- Database integration for data persistence
+- User authentication system
+- Advanced export formats
+- API endpoints for data access
+- Mobile-responsive design improvements
+
+## [2.0.0] - 2025-05-26 - Enterprise Release 🚀
+
+### Added - Infrastructure
+- Complete CI/CD pipeline with GitHub Actions
+- Code quality workflows (linting, formatting, type checking)
+- Security scanning (Bandit, Safety, Semgrep)
+- Automated testing framework with pytest
+- Pre-commit hooks for code quality
+- Enterprise-level project structure
+
+### Added - Documentation
+- Comprehensive user guide and documentation
+- Issue templates (bug reports, feature requests, questions)
+- Pull request templates with quality checklist
+- Security policy (SECURITY.md)
+- Code of conduct (CODE_OF_CONDUCT.md)
+- Contributing guidelines (CONTRIBUTING.md)
+
+### Added - Development Tools
+- Development dependencies (requirements-dev.txt)
+- Environment configuration (.env.example)
+- Build configuration (setup.py, pyproject.toml)
+- Package management (MANIFEST.in)
+- Testing structure with fixtures and mocks
+
+### Added - Quality Assurance
+- Code coverage reporting
+- Static analysis tools
+- Performance monitoring
+- Security vulnerability scanning
+- Automated releases with changelog generation
+
+### Changed - Application Structure
+- Modular code organization with proper separation
+- Enhanced error handling and logging
+- Improved performance optimizations
+- Better user interface and experience
+
+### Infrastructure
+- GitHub repository integration
+- Automated workflows for CI/CD
+- Release management
+- Version tagging and semantic versioning
 
 ## [1.0.0] - 2025-05-25
 

@@ -192,3 +192,78 @@ tmp/
 
 # Pliki PDF (dokumenty, które mogą być zbędne)
 27__nasz_gpt__sokrates_script.pdf
+
+# Enterprise Development Files
+# Development environment
+.env
+.env.local
+.env.production
+*.env
+
+# Build and distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing and coverage
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# Type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Code quality tools
+.bandit
+.radon/
+
+# Documentation builds
+docs/_build/
+docs/.doctrees/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# IDEs and editors
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS specific
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Backup files
+*.bak
+*.backup
+*.tmp
+
+# Security files
+private_key*
+*.pem
+*.key
+
+# Large files
+*.zip
+*.tar.gz
+*.7z
