@@ -7,12 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Planned for v2.1.0
+### Planned for v2.2.0
 - Database integration for data persistence
 - User authentication system
 - Advanced export formats
 - API endpoints for data access
 - Mobile-responsive design improvements
+
+## [2.1.0] - 2025-05-26
+
+### Changed
+- Przeprowadzono kompleksowe czyszczenie projektu
+- Usunięto zbędne pliki tymczasowe (pliki __pycache__, .pytest_cache)
+- Zoptymalizowano strukturę folderów
+- Usunięto niepotrzebne pliki konfiguracyjne i kopie zapasowe
 
 ## [2.0.0] - 2025-05-26 - Enterprise Release 🚀
 

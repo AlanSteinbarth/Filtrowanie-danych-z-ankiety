@@ -3,7 +3,8 @@ Aplikacja do analizy i wizualizacji danych z ankiety powitalnej.
 
 Autor: Alan Steinbarth (alan.steinbarth@gmail.com)
 GitHub: https://github.com/AlanSteinbarth
-Data: 25.05.2025
+Data: 26.05.2025
+Wersja: 2.1.0
 
 Aplikacja umożliwia interaktywne przeglądanie i filtrowanie danych z ankiety,
 prezentując wyniki w formie różnorodnych wizualizacji przy użyciu Streamlit.

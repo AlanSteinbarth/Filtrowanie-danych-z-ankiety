@@ -8,7 +8,7 @@
 [![Security](https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety/actions/workflows/security.yml/badge.svg)](https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety/actions)
 [![Version](https://img.shields.io/github/v/release/AlanSteinbarth/Filtrowanie-danych-z-ankiety)](https://github.com/AlanSteinbarth/Filtrowanie-danych-z-ankiety/releases)
 
-> **Wersja 2.0** - Ulepszona, enterprise-level aplikacja do analizy danych ankiety
+> **Wersja 2.1.0** - Zoptymalizowana, enterprise-level aplikacja do analizy danych ankiety
 
 ## 📋 Spis Treści
 
