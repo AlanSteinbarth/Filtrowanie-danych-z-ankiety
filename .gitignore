@@ -263,7 +263,36 @@ private_key*
 *.pem
 *.key
 
+# Environment and configuration files
+.env
+.env.local
+.env.production
+.env.staging
+*.env
+config.json
+secrets.json
+api_keys.txt
+
 # Large files
 *.zip
 *.tar.gz
 *.7z
+
+# IDE and system files
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+.idea/
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+
+# Application specific
+uploads/
+data/private/
+logs/
+*.log
