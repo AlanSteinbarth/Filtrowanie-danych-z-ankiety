@@ -296,3 +296,25 @@ uploads/
 data/private/
 logs/
 *.log
+
+# Additional cleanup rules
+profile.stats
+security-report.json
+safety-report.json
+*.prof
+*.stats
+
+# Enterprise documentation (temporary)
+ENTERPRISE_STATUS.md
+
+# Database files (if implemented)
+*.db
+*.sqlite3
+db/*.sql
+
+# Additional temporary files
+*.bak
+*.backup
+*.orig
+*.copy
+*~
